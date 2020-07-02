@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.amazonaws:aws-lambda-java-core:1.2.0'
+    implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.807')
+    implementation 'com.amazonaws:aws-java-sdk-dynamodb'
+    //testImplementation 'junit:junit:4.12'
+}
